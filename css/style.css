@@ -127,5 +127,10 @@ header nav.container .menu .active {
         text-align: right;
     }
 
+}
 
+@media(width >=87.5rem) {
+    header .container {
+        padding: 0px;
+    }
 }
