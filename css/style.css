@@ -58,7 +58,7 @@ header .container {
 }
 
 
-header .container a {
+header .container>a {
     display: inline-block;
     text-decoration: none;
     color: var(--maincolor);
@@ -83,6 +83,8 @@ header nav.container .menu li {
 header nav.container .menu a {
     display: inline-block;
     padding: 0.625rem 0rem;
+    text-decoration: none;
+    color: var(--maincolor);
 }
 
 header nav.container .menu .active {
@@ -90,3 +92,40 @@ header nav.container .menu .active {
 }
 
 /*fin header/*
+
+
+/*mediaqueris*/
+
+@media(width >=48rem) {
+    header nav.container #btnMenu {
+        display: none;
+    }
+
+    header nav.container .menu {
+        width: 80%;
+        order: 1;
+
+    }
+
+    header nav.container .menu li {
+        text-align: left;
+        display: inline-block;
+    }
+
+    header nav .menu {
+        padding: 0;
+    }
+
+    header nav.container .menu a {
+        padding: 0rem var(--space) 0 0;
+
+    }
+
+    header .container>a {
+        width: 20%;
+        order: 2;
+        text-align: right;
+    }
+
+
+}
